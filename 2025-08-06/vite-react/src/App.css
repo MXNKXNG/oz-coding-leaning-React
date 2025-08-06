@@ -18,6 +18,30 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+/* 학습 내용 추가 */
+.빵 {
+  background-color: orange;
+  color: black;
+}
+.패티 {
+  background-color: brown;
+  color: black;
+}
+.양상추 {
+  background-color: green;
+  color: black;
+}
+.토마토 {
+  background-color: red;
+  color: black;
+}
+.치즈 {
+  background-color: yellow;
+  color: black;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
