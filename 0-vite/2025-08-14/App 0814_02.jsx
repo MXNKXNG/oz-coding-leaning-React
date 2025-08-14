@@ -40,20 +40,19 @@ const useFetch = (url) => {
     const [ data, setData ] = useState(null)
     const [ error, setError ] = useState(null)
 
-    console.log(url)
-    
     useEffect(() => {
         fetch(url)
         .then((res) => res.json())
         .then((res) => {
             setData(res);
             setLoading(false);
+            console.log(res)
+
         })
         .catch((err) => {
             setError(err);
             setLoading(false);
         })
-        console.log("실행")
     }, [url]);
 
     return { loading, data, error }
